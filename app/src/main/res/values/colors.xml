@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 :<?xml version="1.0" encoding="utf-8"?>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+>>>>>>> 130da371e22be90532172fef7ce2d976c089c0c4
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
