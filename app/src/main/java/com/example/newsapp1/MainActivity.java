@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         categoryRV.setAdapter(categoryRVAdapter);
 
     }
-    private getCategories(){
+    private void getCategories(){
         categoryRVModalArrayList.add(new CategoryRVModal("All",""));
         categoryRVModalArrayList.add(new CategoryRVModal("Technology",""));
         categoryRVModalArrayList.add(new CategoryRVModal("Science",""));
