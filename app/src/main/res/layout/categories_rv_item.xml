@@ -27,7 +27,7 @@
             android:textAlignment="center"
             android:padding="3dp"
             android:textStyle="bold"
-            android:id="@+id/idRVCategories"
+            android:id="@+id/idTVCategory"
             />
     </RelativeLayout>
 
