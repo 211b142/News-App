@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewsDetailActivity">
+    tools:context=".NewsDetailActivity"
+    android:background="@color/black_shade1"
+    >
+
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/black_shade1"
         app:titleTextColor="@color/yellow"
         android:id="@+id/toolbar"
@@ -17,6 +20,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/idBtnReadNews"
         android:layout_below="@id/toolbar"
         >
         <RelativeLayout
@@ -43,9 +47,45 @@
             android:padding="4dp"
             android:layout_margin="4dp"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
+            <TextView
+                android:id="@+id/idTVSubDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVTitle"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="4dp"
+                android:text="Sub Description"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/idIVContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/idTVSubDesc"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="Content"
+                android:textColor="@color/white" />
+        </RelativeLayout>
     </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read full News"
+        android:background="@color/yellow"
+        app:backgroundTint="@color/yellow"
+        android:id="@+id/idBtnReadNews"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" ></Button>
+
+
 </RelativeLayout>
