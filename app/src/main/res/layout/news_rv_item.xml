@@ -23,6 +23,7 @@
            android:id="@+id/idTVNewsHeading"
            android:layout_below="@+id/idIVNews"
            android:text="@string/news_heading"
+           android:textColor="@color/yellow"
            android:textStyle="bold"
            android:textSize="18sp"
            android:padding="3dp"
